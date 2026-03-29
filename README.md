@@ -6,11 +6,11 @@
 
 - The goal is to analyze the performance of a newly launched menu to identify high-performing items, low-performing items, and understand customer preferences.
 
-##🎯 Business Objectives
+## 🎯 Business Objectives
 
 - The primary objective is to use SQL to extract actionable insights from the restaurant's database. 
 
-###Key questions include:
+### Key questions include:
 
 - Menu Exploration: What is the variety and price range of the new menu?
 
@@ -18,7 +18,7 @@
 
 - Customer Behavior: Which specific items are driving the most revenue and how do top customers interact with the menu?
 
-##📂 Dataset Description
+## 📂 Dataset Description
 
 ### The analysis is performed on two primary tables:
 
@@ -31,7 +31,7 @@ Language: SQL
 
 Tool: [MySQL Workbench]
 
-##🚀 Analysis Roadmap
+## 🚀 Analysis Roadmap
 
 ### 1. Menu Exploration
 
@@ -59,7 +59,7 @@ Tool: [MySQL Workbench]
 
 - Analyze the ordering patterns of the highest-spending customers.
 
-##📈 Key Insights  
+## 📈 Key Insights  
 
 - Top Performer: The [Item Name] was the most ordered item, suggesting it's a fan favorite.
 
@@ -67,6 +67,6 @@ Tool: [MySQL Workbench]
 
 - Underperformers: Items like [Item Name] had fewer than 5 orders over the period and may be candidates for removal or promotion.
 
-##🏁 Conclusion
+## 🏁 Conclusion
 
 Based on the analysis, the Taste of the World Café should focus marketing efforts on their [Cuisine Type] offerings while considering a "combo deal" for the most frequently bought-together items to increase the average order value.
