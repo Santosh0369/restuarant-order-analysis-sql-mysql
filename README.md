@@ -1,72 +1,99 @@
-# Restuarant_order_analysis_SQL_MySQL
+# 🍽️ Restaurant Orders — SQL Analysis Project
 
-## 📋 Project Overview
+---
 
-- This project involves acting as a Data Analyst for "Taste of the World Café," a restaurant with a diverse menu ranging from American to Asian cuisine. 
+## 📋 Executive Summary
 
-- The goal is to analyze the performance of a newly launched menu to identify high-performing items, low-performing items, and understand customer preferences.
+This project analyzes a restaurant's transactional database to uncover patterns in menu performance, customer ordering behavior, and revenue generation. Using MySQL, I explored two core tables — `menu_items` and `order_details` — spanning **Q1 2023 (January–March)**. The analysis surfaces actionable insights around which cuisines and dishes drive the most value, how customers build their orders, and where the restaurant's highest-spending customers are concentrating their spend.
 
-## 🎯 Business Objectives
+---
 
-- The primary objective is to use SQL to extract actionable insights from the restaurant's database. 
+## 🧩 Business Problem
 
-### Key questions include:
+The restaurant management team wants to answer three key questions:
 
-- Menu Exploration: What is the variety and price range of the new menu?
+1. **Menu Optimization** — Is the current menu priced competitively across categories? Are there underperforming dishes that should be reconsidered?
+2. **Order Patterns** — How large are typical orders, and are there outliers worth investigating?
+3. **Customer Behavior** — What are high-spending customers ordering, and which menu categories are most popular among top spenders?
 
-- Order Analysis: What does the order volume look like, and what are the most popular categories?
+Without structured data analysis, these decisions are made on intuition alone — this project replaces guesswork with evidence.
 
-- Customer Behavior: Which specific items are driving the most revenue and how do top customers interact with the menu?
+---
 
-## 📂 Dataset Description
+## 🛠️ Methodology
 
-### The analysis is performed on two primary tables:
+The analysis was conducted in **three sequential objectives**, each building on the last:
 
-- menu_items: Contains details about every item on the menu (Name, Category, Price).
+**Objective 1 — Menu Exploration**
+- Inventoried all 32 menu items across 4 cuisine categories (American, Asian, Mexican, Italian)
+- Identified price range, category distribution, and average price per category
+- Flagged the cheapest item (Edamame @ $5.00) and most expensive (Shrimp Scampi @ $19.95)
 
-- order_details: Contains transactional data (Order ID, Item ID, Date, Time).
+**Objective 2 — Order Details Exploration**
+- Validated the date range of the dataset: **Jan 1, 2023 – Mar 31, 2023**
+- Counted total orders (~5,370 unique orders) and total line items (~12,000+ rows)
+- Identified orders with unusually high item counts (>12 items)
 
-🛠️ Tech Stack
-Language: SQL
+**Objective 3 — Customer Behavior Analysis**
+- Joined `menu_items` and `order_details` on `menu_item_id = item_id`
+- Ranked items by order frequency to find the most and least popular dishes
+- Identified the **top 5 highest-spend orders** and drilled into their category composition
 
-Tool: [MySQL Workbench]
+All queries were written incrementally — moving from simple SELECTs to multi-table JOINs, GROUP BYs, HAVINGs, and subfiltering with WHERE IN clauses.
 
-## 🚀 Analysis Roadmap
+---
 
-### 1. Menu Exploration
+## 💡 Skills Demonstrated
 
-- Find the number of items on the menu.
+| Skill | Application |
+|---|---|
+| **SQL Querying** | SELECT, WHERE, GROUP BY, ORDER BY, HAVING, LIMIT |
+| **Aggregations** | COUNT, SUM, AVG, MIN, MAX, ROUND |
+| **Joins** | LEFT JOIN across `menu_items` and `order_details` |
+| **Filtering** | Category filters, date range checks, threshold filtering |
+| **Data Exploration** | Profiling tables before analysis to understand shape and quality |
+| **Business Thinking** | Translating business questions into SQL queries |
 
-- Identify the least and most expensive items.
+---
 
-- Analyze the distribution of cuisines (American, Italian, Mexican, Asian).
+## 📊 Results & Business Recommendations
 
-### 2. Order Details Exploration
+### Key Findings
 
-- Determine the date range of the dataset.
+- **Italian is the priciest category** (avg ~$16.75) and also has the most dishes (9 items), suggesting it's a flagship cuisine for the restaurant.
+- **American dishes are the most affordable** (avg ~$10.07), anchoring value-seeking customers.
+- **Hamburger and Edamame** were among the least ordered items — these may benefit from promotion or reconsideration.
+- **Korean Beef Bowl and Cheeseburger** ranked among the most frequently ordered — strong candidates for combo deals or upsell pairing.
+- **Top spending orders leaned heavily Italian** — order #440 (the highest-spend order) was dominated by Italian dishes, suggesting that high-value customers are drawn to the premium cuisine category.
 
-- Calculate total orders and total items ordered.
+### Recommendations
 
-- Identify orders with the highest number of items.
+1. **Promote underperforming items** like Hamburger with targeted bundles or discounts to improve throughput.
+2. **Expand the Italian menu** or introduce seasonal specials in that category — data shows top spenders gravitate toward it.
+3. **Investigate large orders (>12 items)** — these may represent catering or group orders that could be captured with a dedicated group-order menu or pricing tier.
+4. **Use Korean Beef Bowl and Cheeseburger as anchor items** in marketing — their high order frequency signals broad appeal.
 
-### 3. Customer & Menu Insight (The "Deep Dive")
+---
 
-- Combine both tables using JOIN operations.
+## 🔭 Next Steps
 
-- Identify the most and least ordered items.
+- **Integrate time-of-day analysis** — Join `order_time` to identify peak ordering hours and optimize staffing accordingly.
+- **Build a revenue dashboard** — Visualize category-level revenue trends over the Q1 period using a BI tool (e.g., Tableau or Power BI).
+- **Cohort analysis** — If customer IDs become available, track repeat ordering behavior and build a customer loyalty profile.
+- **Expand the date range** — Q1 data is a good baseline, but adding Q2–Q4 would allow seasonality analysis and year-over-year comparisons.
+- **Menu price elasticity study** — Test whether price changes on mid-tier items (e.g., Veggie Burger, Cheese Quesadillas) affect order volume.
 
-- Determine which cuisines are generating the most revenue.
+---
 
-- Analyze the ordering patterns of the highest-spending customers.
+## 📁 Files in this Repository
 
-## 📈 Key Insights  
+| File | Description |
+|---|---|
+| `mysql_analysis_restaurant_orders.sql` | All SQL queries for the three-objective analysis |
+| `menu_items.csv` | Raw menu data — 32 items across 4 categories |
+| `order_details.csv` | Raw order transaction data — Q1 2023 |
+| `restaurant_db_data_dictionary.csv` | Field definitions for both tables |
 
-- Top Performer: The [Item Name] was the most ordered item, suggesting it's a fan favorite.
+---
 
-- Revenue Driver: While [Cuisine Type] had fewer orders, it generated the highest revenue due to premium pricing.
-
-- Underperformers: Items like [Item Name] had fewer than 5 orders over the period and may be candidates for removal or promotion.
-
-## 🏁 Conclusion
-
-Based on the analysis, the Taste of the World Café should focus marketing efforts on their [Cuisine Type] offerings while considering a "combo deal" for the most frequently bought-together items to increase the average order value.
+*Project completed as part of a data analytics portfolio. Database: MySQL · Domain: Restaurant & F&B Analytics*
