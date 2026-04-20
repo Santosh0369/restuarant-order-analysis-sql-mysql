@@ -76,6 +76,31 @@ All queries were written incrementally — moving from simple SELECTs to multi-t
 - 7. What is the average dish price within each category?
   <img width="713" height="327" alt="image" src="https://github.com/user-attachments/assets/4827d1f1-180b-4a3b-aa62-3c23e7c054f7" />
 
+**Objective 2 — Exploring the order_details table**
+
+- 1. View the order_details table.
+
+  <img width="613" height="340" alt="image" src="https://github.com/user-attachments/assets/c4f3929c-1404-458b-9369-631c64d99ed6" />
+
+- 2. What is the date range of the table?
+ 
+  <img width="771" height="236" alt="image" src="https://github.com/user-attachments/assets/e801457e-111d-43e6-a19a-05539f333e30" />
+
+- 3. How many orders were made within this date range?
+
+  <img width="796" height="208" alt="image" src="https://github.com/user-attachments/assets/26c27d30-b2ed-4ef5-a298-2809d74f5738" />
+
+- 4. How many items were ordered within this date range?
+
+  <img width="550" height="170" alt="image" src="https://github.com/user-attachments/assets/77c5165e-5a8f-4a7b-8766-9adb25108467" />
+
+- 5. Which orders had the largest number of items?
+
+  <img width="871" height="278" alt="image" src="https://github.com/user-attachments/assets/fb6fc550-01be-4223-b78c-eee2a9e53bb9" />
+
+- 6. How many orders had more than 12 items?
+
+  <img width="882" height="413" alt="image" src="https://github.com/user-attachments/assets/90dd919a-f34b-45c3-89c9-d5ece68029f8" />
 
 
 
