@@ -4,7 +4,7 @@
 
 ## 📋 Executive Summary
 
-This project analyzes a restaurant's transactional database to uncover patterns in menu performance, customer ordering behavior, and revenue generation. Using MySQL, I explored two core tables — `menu_items` and `order_details` — spanning **Q1 2023 (January–March)**. The analysis surfaces actionable insights around which cuisines and dishes drive the most value, how customers build their orders, and where the restaurant's highest-spending customers are concentrating their spend.
+This project analyzes a restaurant's transactional database to uncover patterns in menu performance, customer ordering behaviour, and revenue generation. Using MySQL, I explored two core tables — `menu_items` and `order_details` — spanning **Q1 2023 (January–March)**. The analysis surfaces actionable insights around which cuisines and dishes drive the most value, how customers build their orders, and where the restaurant's highest-spending customers are concentrating their spend.
 
 ---
 
@@ -14,7 +14,7 @@ The restaurant management team wants to answer three key questions:
 
 1. **Menu Optimization** — Is the current menu priced competitively across categories? Are there underperforming dishes that should be reconsidered?
 2. **Order Patterns** — How large are typical orders, and are there outliers worth investigating?
-3. **Customer Behavior** — What are high-spending customers ordering, and which menu categories are most popular among top spenders?
+3. **Customer Behaviour** — What are high-spending customers ordering, and which menu categories are most popular among top spenders?
 
 Without structured data analysis, these decisions are made on intuition alone — this project replaces guesswork with evidence.
 
@@ -34,7 +34,7 @@ The analysis was conducted in **three sequential objectives**, each building on 
 - Counted total orders (~5,370 unique orders) and total line items (~12,000+ rows)
 - Identified orders with unusually high item counts (>12 items)
 
-**Objective 3 — Customer Behavior Analysis**
+**Objective 3 — Customer Behaviour Analysis**
 - Joined `menu_items` and `order_details` on `menu_item_id = item_id`
 - Ranked items by order frequency to find the most and least popular dishes
 - Identified the **top 5 highest-spend orders** and drilled into their category composition
@@ -55,6 +55,23 @@ All queries were written incrementally — moving from simple SELECTs to multi-t
 | **Business Thinking** | Translating business questions into SQL queries |
 
 ---
+
+## 💻 Business Questions Answered Using SQL Query in MYSQL Workbench
+
+**Objective 1 — Menu Exploration**
+
+- 1. View menu item table
+  <img width="589" height="436" alt="image" src="https://github.com/user-attachments/assets/a3145d76-a4e1-4b79-85ab-7daf3087fdfa" />
+- 2. Find the number of items on the menu.
+  <img width="586" height="228" alt="image" src="https://github.com/user-attachments/assets/53769f32-43b4-46db-8724-29e1811a1b36" />
+-- 3. What are the least and most expensive items on the menu?
+  <img width="795" height="388" alt="image" src="https://github.com/user-attachments/assets/3327a27f-f413-49dd-869b-a80d72d79d56" />
+--
+   <img width="762" height="466" alt="image" src="https://github.com/user-attachments/assets/31309551-5f7a-43ca-809c-28da537f2981" />
+
+
+
+
 
 ## 📊 Results & Business Recommendations
 
