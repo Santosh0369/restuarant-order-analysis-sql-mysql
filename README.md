@@ -27,7 +27,7 @@ The analysis was conducted in **three sequential objectives**, each building on 
 **Objective 1 — Menu Exploration**
 - Inventoried all 32 menu items across 4 cuisine categories (American, Asian, Mexican, Italian)
 - Identified price range, category distribution, and average price per category
-- Flagged the cheapest item (Edamame @ $5.00) and most expensive (Shrimp Scampi @ $19.95)
+- Flagged the cheapest item (Edamame @ $5.00) and the most expensive (Shrimp Scampi @ $19.95)
 
 **Objective 2 — Order Details Exploration**
 - Validated the date range of the dataset: **Jan 1, 2023 – Mar 31, 2023**
@@ -64,11 +64,17 @@ All queries were written incrementally — moving from simple SELECTs to multi-t
   <img width="589" height="436" alt="image" src="https://github.com/user-attachments/assets/a3145d76-a4e1-4b79-85ab-7daf3087fdfa" />
 - 2. Find the number of items on the menu.
   <img width="586" height="228" alt="image" src="https://github.com/user-attachments/assets/53769f32-43b4-46db-8724-29e1811a1b36" />
--- 3. What are the least and most expensive items on the menu?
-  <img width="795" height="388" alt="image" src="https://github.com/user-attachments/assets/3327a27f-f413-49dd-869b-a80d72d79d56" />
---
-   <img width="762" height="466" alt="image" src="https://github.com/user-attachments/assets/31309551-5f7a-43ca-809c-28da537f2981" />
-
+- 3. What are the least and most expensive items on the menu?
+  <img width="808" height="415" alt="image" src="https://github.com/user-attachments/assets/da0636e5-c913-4edc-8f6d-84516603556a" />
+  <img width="701" height="238" alt="image" src="https://github.com/user-attachments/assets/642121c2-2eb1-432f-840c-a5ad68fa49ba" />
+- 4. How many Italian dishes are on the menu?
+  <img width="652" height="315" alt="image" src="https://github.com/user-attachments/assets/6ef53ada-7249-42ee-ba77-56b7d49c6021" />
+- 5. What are the least and most expensive Italian dishes on the menu?
+  <img width="905" height="602" alt="image" src="https://github.com/user-attachments/assets/4f626b76-a5d0-44ff-b435-01780c6c11cd" />
+- 6. How many dishes are in each category?
+  <img width="547" height="346" alt="image" src="https://github.com/user-attachments/assets/cb908de7-148e-45ae-86ea-62122a722ffa" />
+- 7. What is the average dish price within each category?
+  <img width="713" height="327" alt="image" src="https://github.com/user-attachments/assets/4827d1f1-180b-4a3b-aa62-3c23e7c054f7" />
 
 
 
