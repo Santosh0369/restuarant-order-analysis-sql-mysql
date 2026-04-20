@@ -106,13 +106,17 @@ All queries were written incrementally — moving from simple SELECTs to multi-t
 
 - 1. Combine the menu_items and order_details tables into a single table.
 <img width="893" height="349" alt="image" src="https://github.com/user-attachments/assets/fbaf5114-2f3e-45d2-bf14-146755d97693" />
+
 - 2. What were the least- and most-ordered items? What categories were they in?
 <img width="653" height="476" alt="image" src="https://github.com/user-attachments/assets/23d91ea1-0b51-4f7d-973c-6cef0f40ea12" />
 <img width="664" height="494" alt="image" src="https://github.com/user-attachments/assets/eb132376-7dce-401b-a26a-54e8cee70fe7" />
+
 - 3. What were the top 5 orders that spent the most money?
 <img width="664" height="435" alt="image" src="https://github.com/user-attachments/assets/f6a93239-1d6d-4d9e-8007-3e0e6e76b7b1" />
+
 - 4. View the details of the highest spend order. What insights can you gather from the data?
 <img width="651" height="412" alt="image" src="https://github.com/user-attachments/assets/5b6f00a9-c31a-4048-938d-856a9070740e" />
+
 - 5. View the details of the top 5 highest spend orders. What insights can you gather from the data?
 <img width="750" height="372" alt="image" src="https://github.com/user-attachments/assets/43e506ea-ca88-4a0a-bc86-22d47059398f" />
 
