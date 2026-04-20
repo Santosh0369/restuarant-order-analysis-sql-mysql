@@ -161,4 +161,14 @@ All queries were written incrementally — moving from simple SELECTs to multi-t
 
 ---
 
-*Project completed as part of a data analytics portfolio. Database: MySQL · Domain: Restaurant & F&B Analytics*
+## 📬 Contact
+
+For any queries or collaboration:
+
+* LinkedIn: [your-link](https://www.linkedin.com/in/santoshdharma001/)
+
+---
+
+## ⭐ If you found this project useful, give it a star!
+
+---
